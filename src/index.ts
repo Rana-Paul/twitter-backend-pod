@@ -3,8 +3,10 @@ import * as dotenv from 'dotenv'
 
 dotenv.config()
 
+const port = process.env.PORT || 8000;
+
 async function init() {
   const app = await initServer();
-  app.listen(8000, () => console.log("server Started..."));
+  app.listen(port, () => console.log("server Started...ab to hoja"));
 }
 init()
