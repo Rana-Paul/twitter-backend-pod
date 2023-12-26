@@ -42,6 +42,8 @@ export async function initServer() {
 
 
     },
+    introspection: true,
+    
   });
 
   await graphqlServer.start();
